@@ -1,28 +1,28 @@
 class Oneup < Formula
   desc "CalVer-based version management for npm packages"
   homepage "https://github.com/circlesac/oneup"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/oneup/releases/download/v#{version}/oneup-aarch64-apple-darwin.tar.gz"
-      sha256 "92ea8aa39822b88b59a8483b27fce9861142aa915c5e7f0af30b1727f24d1713"
+      sha256 "d3bedefb0ff454f3cd2e8a45afa08db1bd495242891cca95b8a7c834d2767cdf"
     end
     on_intel do
       url "https://github.com/circlesac/oneup/releases/download/v#{version}/oneup-x86_64-apple-darwin.tar.gz"
-      sha256 "1d1b73e10002b89c6b1e6ebc86cdd3d335009fffcd7abf24f4af88dcf61940c1"
+      sha256 "e665bcf09e715276b8e3bd9ba474f1e034d62e3e90c506f4da07ebe87365e80d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/oneup/releases/download/v#{version}/oneup-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7470340a0c2e49c1cdf50ff4e55ee209b2145e81367ddb444fd9f8f911657264"
+      sha256 "7d317b455b81aebe5f81c1175992030b4b0c50dfb77be0668a43c30a2db22dc0"
     end
     on_intel do
       url "https://github.com/circlesac/oneup/releases/download/v#{version}/oneup-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a9ec1b223aae2518e624f268498b13326eefcddf159398c77e82aeffaf01382b"
+      sha256 "17aaff2c94cabf77b23ef5f57aaa583b8f3c314f3424459c59c123550f5d2258"
     end
   end
 
