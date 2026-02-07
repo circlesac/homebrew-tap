@@ -1,28 +1,28 @@
 class ShhEnv < Formula
   desc "Load secrets from OS keychain and inject as environment variables"
   homepage "https://github.com/circlesac/shh-env"
-  version "26.2.0"
+  version "26.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/shh-env/releases/download/v#{version}/shh-env-darwin-arm64.tar.gz"
-      sha256 "b7de67cf1bb8624df38c2eec484529d9198d6246ce2ad5bd08e03c91978f4262"
+      sha256 "210a1a614382d83ae89585397080f013e7eaedab0587d0d66ea89e943d593502"
     end
     on_intel do
       url "https://github.com/circlesac/shh-env/releases/download/v#{version}/shh-env-darwin-x64.tar.gz"
-      sha256 "ccf640994cc88aa4e14aafc43a9bb834cb93f54c5fc9919c9fe6bd67ce88f8db"
+      sha256 "e9f3eb49027808b0b8085a28a211bc558049ed30515ef166fe696bd810fe7ad5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/shh-env/releases/download/v#{version}/shh-env-linux-arm64.tar.gz"
-      sha256 "91deaa1d59292fcbdca7246197326ca9b36ca5165bbbf13234f6d8483d856160"
+      sha256 "9dcda62d94719807ec935762c9af1b50fa6c54b6c51674e8ea01a9bf4e2ba941"
     end
     on_intel do
       url "https://github.com/circlesac/shh-env/releases/download/v#{version}/shh-env-linux-x64.tar.gz"
-      sha256 "29ead17889f2f3f75651b0ae917e17ac83b252cbd2bc20763a3e414df0351c78"
+      sha256 "e53021526eb5f351bbe1768e3abaffe1d5f7685a23d1fe4649b31ea68dcf682d"
     end
   end
 
