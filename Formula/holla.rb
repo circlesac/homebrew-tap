@@ -7,22 +7,22 @@ class Holla < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-darwin-arm64.tar.gz"
-      sha256 "41b49c0e00fee79ef9ba6c920e7ee2ff954776e59c812ba876f436cecd9aed51"
+      sha256 "c52caac4d560e9bff851f3327798cf7d90dba58b9a5c6111acece3d8778ccf71"
     end
     on_intel do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-darwin-x64.tar.gz"
-      sha256 "824b6b4b73e3aa4a7ca5740461a30ab247733d4c07b24393aa510ca8b507fc3d"
+      sha256 "53d7535e86fd59a86f8567842c4608c0ac8f5e838e4192121639c211cf263e9f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-linux-arm64.tar.gz"
-      sha256 "52595e71e3bf6eeea061dd59ccabfb37946353edac1e3faee7e193c109f95e82"
+      sha256 "4746d32bb29e34288bbf07133646e068a76b8291191ee8cec867319de0a38ce5"
     end
     on_intel do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-linux-x64.tar.gz"
-      sha256 "5ea719176f9784b4723ce2da12ab55de113e2c193aaa3456fbf47fa8ce093326"
+      sha256 "644280d1f462ac875d7282e5c7489da2d2604015f21344d530de31eaaf8ad9e3"
     end
   end
 
