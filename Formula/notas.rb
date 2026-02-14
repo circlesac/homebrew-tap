@@ -7,22 +7,22 @@ class Notas < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-darwin-arm64.tar.gz"
-      sha256 "1190dc1b2c986d8999c7aba67483b8e4893e3fa2abbdd363f0b191a914876bc3"
+      sha256 "7e6dbe87af4e1f2e6790f57f42660b6a17cbfb4af4ee1662c64c2a6d86d5e8c3"
     end
     on_intel do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-darwin-x64.tar.gz"
-      sha256 "fa0378a3dd0443bf97615059c5dc4fb72e88adeb2058f003924265fc202ebf4a"
+      sha256 "b536b5a99a367ae1f710a43cae731ed5343ccb4498e3e46e24b4d9f8d49dfdb7"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-linux-arm64.tar.gz"
-      sha256 "1f79ac56eb8603453605f6125bd34d484db74318714267725bf91de3347671a3"
+      sha256 "fad7f7b04056caa24ce32b7f480bcab664e6b999f2aaae9c0ef06f832a295d36"
     end
     on_intel do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-linux-x64.tar.gz"
-      sha256 "449f8badfcba2db34ce6da05f45f8c3a349a8386b8f1520c6e2dc66120069183"
+      sha256 "71efa6650d6ba0628eafbf350aa96ba6fc92f7489fbc8b7c56687043342efd88"
     end
   end
 
