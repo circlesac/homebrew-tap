@@ -1,28 +1,28 @@
 class Holla < Formula
   desc "CLI tool that acts as you on messaging platforms"
   homepage "https://github.com/circlesac/holla-cli"
-  version "26.2.21"
+  version "26.2.22"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-darwin-arm64.tar.gz"
-      sha256 "1b35d5255bbedfcea0ee3ed7c59cb0bbbfd025f7fba6093e3864f747d7f9b2be"
+      sha256 "b23c55778a0289fd008c82c91fce6753ffadbd8db02b0c487373b267789b6ba5"
     end
     on_intel do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-darwin-x64.tar.gz"
-      sha256 "4f789a0d4746a5e611123b6b4bdab943fee6bdb911bee420b3648d1d1b395c57"
+      sha256 "cef477b30c152d97cd2afcf1069d7f49044ec7f9a0423f9083d934d71aef1f6b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-linux-arm64.tar.gz"
-      sha256 "aaf3929edfa89f760508a0b8d36b379290b08e7b4f863e90aadd7de720ed7c6a"
+      sha256 "29a46d965ee7e03aa2822e5f1422063a95e697dfa542b387a02c7f7cf84ddefd"
     end
     on_intel do
       url "https://github.com/circlesac/holla-cli/releases/download/v#{version}/holla-linux-x64.tar.gz"
-      sha256 "32cfd1d3d1d12bf8c089328c980138427ca4b7179bddfec512ac12ec5b0c5d06"
+      sha256 "1b6b9d9a0ae91ce62ae24bdb202d8957629b7106ebb2e1f2f5cbc27c47c88c32"
     end
   end
 
