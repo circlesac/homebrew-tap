@@ -7,22 +7,22 @@ class Cgrok < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-darwin-arm64.tar.gz"
-      sha256 "aef0809f70d8d05624a66a135170860723885b26a134f37dd11956d46023a93c"
+      sha256 "ccf3e63f318e00e0816cab67b8efe81619dd7f5376eca10e676bdbb687bcc235"
     end
     on_intel do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-darwin-x64.tar.gz"
-      sha256 "50920c7259264684bfdc2bf0abde10305f105aef0a71e885f1a4e7a6a0572e69"
+      sha256 "4b306ce76329bd4728a84665248a6aa6812faefbe70b21ebcd1875a335ce8741"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-linux-arm64.tar.gz"
-      sha256 "5f14379a0359fa1d113f577ce0f5cab70ed6eed7efc4f19a50f225525ddb94df"
+      sha256 "2a2226f006b05a1640f4c2a0aa53f5e9f27fd12827cd88afcf7bda57e7004b5b"
     end
     on_intel do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-linux-x64.tar.gz"
-      sha256 "a75ed3abf8bb48272575beed62bb211fc0443fe30a518ad518bf1b533435e249"
+      sha256 "f60d46b40c3d6ba6e350a90903e0302d05471bb1370e71d551d161032a5e3baa"
     end
   end
 
