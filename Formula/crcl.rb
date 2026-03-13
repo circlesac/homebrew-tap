@@ -7,22 +7,22 @@ class Crcl < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-darwin-arm64.tar.gz"
-      sha256 "efef4d02d929c86de469a460f6d77fb4b8c78d5c2c7aba5fc3ad73fa245b1b85"
+      sha256 "704d08fd4c8eec9a079b0ccad30589c6513745b62a26baaffb99e668929f9f52"
     end
     on_intel do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-darwin-amd64.tar.gz"
-      sha256 "0f96e150bb7ca092ac9c398415926c06c846e56ef43d27a3e8c1b3c774aa774f"
+      sha256 "437b953e1767dad585aeb0f7414d8d1e8ee0bc91903e9ac1027add98f7962360"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-linux-arm64.tar.gz"
-      sha256 "44c427d2d74864e5f8d93231a7cf577cb8ae032c0312d254e013492b118277ab"
+      sha256 "ed5f14898bd8d52085b6b008f09274286d99441d7f72f3eb9d355140e6e7d9d5"
     end
     on_intel do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-linux-amd64.tar.gz"
-      sha256 "4f4fabf836cded623ecba3348f10bc9acd47d553b0b4d50c0ea66b24e54f1cd3"
+      sha256 "76f0dba6e6edea33728eb8ff78c9fb53ea9e5e5e78dde63702e20131a9cd814f"
     end
   end
 
