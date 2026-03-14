@@ -1,28 +1,28 @@
 class Crcl < Formula
   desc "Circles CLI — manage orgs, API keys, and authenticate with circles.ac"
   homepage "https://github.com/circlesac/crcl"
-  version "26.3.1"
+  version "26.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-darwin-arm64.tar.gz"
-      sha256 "68f90f171e2cf600b10f87722aa7f0bcbb5a731773c177335848e344e0419d2a"
+      sha256 "9d0cc4d3191bc66e5472f8d47803f79a1862bf06f84e0e2d1fe5c41c64fe4566"
     end
     on_intel do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-darwin-amd64.tar.gz"
-      sha256 "0e2bd3b22fdda8fd0e860a61def673ba3dfea40e7a003cc5b5195a05d2b70035"
+      sha256 "cf4c7668a7cf14f56492816d3397fd3780d11dacb67378bf34afc514d856f744"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-linux-arm64.tar.gz"
-      sha256 "75718f4eb96c6b78d2ee51f678a905a77f34f0a85c6048f20ccde4678637107d"
+      sha256 "d379f0f7c6008bfda46c4afa1511246d0d50ea4fc9b58b4fbf4298e9da8b88f4"
     end
     on_intel do
       url "https://github.com/circlesac/crcl/releases/download/v#{version}/crcl-linux-amd64.tar.gz"
-      sha256 "07e88fa5c09985b51f7cd91a08a1e3eea97e8cf338ef6ec0f6392d1ccbd3f6ae"
+      sha256 "1a133716eb50387f5db7c12015d05298f46fe0340cf9a001a9cf20e6d74450a3"
     end
   end
 
