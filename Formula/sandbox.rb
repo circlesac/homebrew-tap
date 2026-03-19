@@ -1,28 +1,28 @@
 class Sandbox < Formula
   desc "Self-hosted E2B-compatible sandbox management CLI"
   homepage "https://github.com/circlesac/sandbox"
-  version "26.3.2"
+  version "26.3.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/sandbox/releases/download/v#{version}/sandbox-darwin-arm64.tar.gz"
-      sha256 "4fdf628c14fbb0f3e9c1eeb61c6a7a9427a56b7587a8f7019e02e637bc99197d"
+      sha256 "cde8bc192168b803a89387047c2ed0812c443ebdcf509f9bafcb8edf4e3b8666"
     end
     on_intel do
       url "https://github.com/circlesac/sandbox/releases/download/v#{version}/sandbox-darwin-amd64.tar.gz"
-      sha256 "43e00432989a1e21ea8add7f87970ddfbd9b31fa0b7209ed5359353abf41d5de"
+      sha256 "4a11446977242f2f7f9bd40e896db768bded1f58b8e094117e3f660d99e43388"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/sandbox/releases/download/v#{version}/sandbox-linux-arm64.tar.gz"
-      sha256 "58ae0a0b149d24ad2bfa7c6dfcf546b55a314677387b14bf04ee9c47babade58"
+      sha256 "4cbd79935672a11f6e36ff406c01fc2c12ee3b0b9a184a221286b8b90b4f2c62"
     end
     on_intel do
       url "https://github.com/circlesac/sandbox/releases/download/v#{version}/sandbox-linux-amd64.tar.gz"
-      sha256 "a807c2103f68ddb137a50688c47f8cdb6681ca8900a65697248c113d57c30163"
+      sha256 "853b4865db318b576bdb086804f7a0beaba43bbfdba29ef37872e1ae0a857a8a"
     end
   end
 
