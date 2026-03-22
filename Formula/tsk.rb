@@ -1,28 +1,28 @@
 class Tsk < Formula
   desc "Circles Tasks — unified task management CLI"
   homepage "https://github.com/circlesac/tsk-cli"
-  version "26.3.0"
+  version "26.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/tsk-cli/releases/download/v#{version}/tsk-darwin-arm64.tar.gz"
-      sha256 "317de5355158395ba64cd752a27f5a7fc632bcb7421793c39d479c138ff2fcb6"
+      sha256 "d834fc8fe85c9c97d4e930d067de0fa2777b88c7415786a1d9c38a75be7f9b91"
     end
     on_intel do
       url "https://github.com/circlesac/tsk-cli/releases/download/v#{version}/tsk-darwin-x64.tar.gz"
-      sha256 "08ff8359e2a1b17518be992e9da7856f892de348a63b2a432dbcb57adeaf53b5"
+      sha256 "622226eee5bd1c51e4b1cb271887058c461dda33d1fa4e4133540ec34ea95362"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/tsk-cli/releases/download/v#{version}/tsk-linux-arm64.tar.gz"
-      sha256 "c32c61c357990254b2c42beb7d20fef16bf811b9fa81c271e7ebd972d150e0be"
+      sha256 "96b68fd89a475e0ef74b2e93917403811556f6d41f8b31b984432262fc2f6a5d"
     end
     on_intel do
       url "https://github.com/circlesac/tsk-cli/releases/download/v#{version}/tsk-linux-x64.tar.gz"
-      sha256 "5b60cd9a2ab2ba8c1770d4b574785d3c6b2f4d7294b910103522453edbfbf93e"
+      sha256 "562fb1324fdbff87780dbe8db28468e93cb7c0c459c86122004688d8a4f337ba"
     end
   end
 
