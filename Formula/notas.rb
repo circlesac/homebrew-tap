@@ -1,28 +1,28 @@
 class Notas < Formula
   desc "Multi-provider notes & docs CLI"
   homepage "https://github.com/circlesac/notas-cli"
-  version "26.4.3"
+  version "26.4.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-darwin-arm64.tar.gz"
-      sha256 "def41981c9e0c1c6670fb91670c2fe408bedf09a9ba3a5167dca4188b3d83b3f"
+      sha256 "835278b1e52ea5871fb5045c8b7501916edd5740471ed1bbb400e6081d3d93ce"
     end
     on_intel do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-darwin-x64.tar.gz"
-      sha256 "e859a0861378f7f96a7642c6200aefd1b8d33692a3c086b5044ab7c4ace81d67"
+      sha256 "e406c4cfaf562e571b64b321489d7701384cdb278d3961b6476fb27060c9f54f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-linux-arm64.tar.gz"
-      sha256 "a0d1e528639bb8bc54c7eeb1402f8159d17b9a6e209fb6a6659e1e860641d107"
+      sha256 "6c01652d7df27a02c234969cd90c66df56f8a7d53c7c4cdf37d7a2608c6eec50"
     end
     on_intel do
       url "https://github.com/circlesac/notas-cli/releases/download/v#{version}/notas-linux-x64.tar.gz"
-      sha256 "31941b39e7cf1dcd12e32fa81caec97f32e1c98a7d12a9ba336a0890629b21fb"
+      sha256 "20fb4c0df1a46add34370b0388559ddd6a31779f6cf5a922601ab15eb9931b45"
     end
   end
 
