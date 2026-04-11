@@ -1,28 +1,28 @@
 class Cgrok < Formula
   desc "An ngrok-like CLI that uses Cloudflare for secure tunneling"
   homepage "https://github.com/circlesac/cgrok"
-  version "26.4.0"
+  version "26.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-darwin-arm64.tar.gz"
-      sha256 "2bcdd0f043bb8647aaf8517ee0a8e77d7a4f30d9502ee679af2f8d72991749d1"
+      sha256 "e8bfc39ceeda0e6365511f07896c8c94b4f2b4744f80595277a196a4e8b09a52"
     end
     on_intel do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-darwin-x64.tar.gz"
-      sha256 "fcffdb0b0005662ba8b209dac8aee693c7b56d518e8085ab7196f1dd5673a417"
+      sha256 "ebcb3afa4aadc1f7731a029ce3eb365274820cfc4b568188942fca9f47a06c0a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-linux-arm64.tar.gz"
-      sha256 "1f623cbbd8559d152c36e568b683f266cf45d417b8568bb22328a62354162b6d"
+      sha256 "33e1583d7b62771ada8ca6f39e1216cf2870aaaf49f36d3fcc79be0e39f2bb5c"
     end
     on_intel do
       url "https://github.com/circlesac/cgrok/releases/download/v#{version}/cgrok-linux-x64.tar.gz"
-      sha256 "1f11f302320b45ccc77689f0633215e21d32eed5d7af82cc86e7946c8015ffa1"
+      sha256 "ca1462c8ab1ec7c5c437b5fb8538594fb462789109d4d5889c8e6bf64759bd76"
     end
   end
 
