@@ -1,28 +1,28 @@
 class FlexCli < Formula
   desc "CLI for Flex HR (flex.team)"
   homepage "https://github.com/circlesac/flex-cli"
-  version "26.4.9"
+  version "26.4.10"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/flex-cli/releases/download/v#{version}/flexhr-darwin-arm64.tar.gz"
-      sha256 "22e875e4c11fb145d29b4829e2c544cf61e7c38931bff06182a624aa13d9ba66"
+      sha256 "d953850b134b364aee0010d9bfb23e9eaa49e5b2adb61264119881dc593a13aa"
     end
     on_intel do
       url "https://github.com/circlesac/flex-cli/releases/download/v#{version}/flexhr-darwin-x64.tar.gz"
-      sha256 "fdd83b4b24633a1e4f63468518f008adc79ae0fe312a3c17e46f104ae312d257"
+      sha256 "91899b62a06ab1cc0c7b2ce6a43f3a427b27d1a23653d5596f221905db03f452"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/flex-cli/releases/download/v#{version}/flexhr-linux-arm64.tar.gz"
-      sha256 "6c4cd487db1d5c8aad01005239009ceb9c2d7139dfd8f870e8413306f0cb4bc6"
+      sha256 "2525eb11aacfc089c280b46d324ae98a89c24d41753bb7a22566be2108340212"
     end
     on_intel do
       url "https://github.com/circlesac/flex-cli/releases/download/v#{version}/flexhr-linux-x64.tar.gz"
-      sha256 "8d311e1be1ddae4e9b3b83b157a8f7bc2fbf307d82ec80e08ecc00db5695a4ac"
+      sha256 "5b68fcadcedfc32ccc3f51c9c2d90d9e761ca4bb63141c6157bae01f8ea35f51"
     end
   end
 
