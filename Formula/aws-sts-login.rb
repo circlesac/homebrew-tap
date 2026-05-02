@@ -1,28 +1,28 @@
 class AwsStsLogin < Formula
   desc "AWS Console auto-login CLI — captures STS temporary credentials via browser automation"
   homepage "https://github.com/circlesac/aws-sts-login"
-  version "26.4.5"
+  version "26.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/aws-sts-login/releases/download/v#{version}/aws-sts-login-darwin-arm64.tar.gz"
-      sha256 "ddc550b5b62017dc027d9b1c567fd3ca17ddf6619c9b2581dabb4487f6115a61"
+      sha256 "4c58f48ad8aa475a2f905e13638cbbd0fbb8322a2fa55fdef9c6eb08f3f13460"
     end
     on_intel do
       url "https://github.com/circlesac/aws-sts-login/releases/download/v#{version}/aws-sts-login-darwin-x64.tar.gz"
-      sha256 "1c524cce21a9714f0b99c0bc353d8a620e613927df9a3b1a6a3353f6f9477663"
+      sha256 "54c7c4a70bdb12784f4cf5ccb506af351a6426094a68ee8687856853f8aefcba"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/aws-sts-login/releases/download/v#{version}/aws-sts-login-linux-arm64.tar.gz"
-      sha256 "c8d966880db93ac40c8f8303269b63ceead1da90ddc6a4be9165f3782e667e24"
+      sha256 "cd7f4940922ec2c06ac9951d2820800e1984423cf285de94f65ba18470a064a1"
     end
     on_intel do
       url "https://github.com/circlesac/aws-sts-login/releases/download/v#{version}/aws-sts-login-linux-x64.tar.gz"
-      sha256 "86dd8725664a4e4a57feec95ff0ebef1bf19801a245ae9ffa0be2c852d198090"
+      sha256 "38643b57cb2f1a13a7354b113be286a0fc65579f26f14bd7b6dc30975e430b92"
     end
   end
 
