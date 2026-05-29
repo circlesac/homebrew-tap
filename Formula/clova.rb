@@ -1,28 +1,28 @@
 class Clova < Formula
   desc "CLOVA Note CLI — transcripts, summaries, speakers, and audio from the terminal"
   homepage "https://github.com/circlesac/clova-cli"
-  version "26.5.3"
+  version "26.5.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/clova-cli/releases/download/v#{version}/clova-darwin-arm64.tar.gz"
-      sha256 "8187e03f261331467e91315ee4dda1bc2c42c4c9c2d7ac256816e69025a97010"
+      sha256 "6679f762bda085131591019b93e6217b43eb6b215abdd1e19459907cea0434ce"
     end
     on_intel do
       url "https://github.com/circlesac/clova-cli/releases/download/v#{version}/clova-darwin-x64.tar.gz"
-      sha256 "e0d4ac459b9fc5f7578cb870d85744edec37ed54e401b115dabaa5a629d5397c"
+      sha256 "bb97348ecf502364700c0b9cb4ae3693001f2bd1f0148f606d47be9da9264751"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/clova-cli/releases/download/v#{version}/clova-linux-arm64.tar.gz"
-      sha256 "5f5d314594aee8edb32c5aa6bed814064d50b62f50469bf26b15ace9768e0f45"
+      sha256 "f20311b2d455f1df1ef6110e00e391800c2b72d5778e798acd1713cb735d0ab0"
     end
     on_intel do
       url "https://github.com/circlesac/clova-cli/releases/download/v#{version}/clova-linux-x64.tar.gz"
-      sha256 "ea5d8917e42f7fd8f3463180db37a624d714b66412a5ac5ccc7040cec4bf7d8a"
+      sha256 "ff509c816123260f42326ddc8ce24f4ca37f7255d56d099253dd3bccaacc3bfe"
     end
   end
 
