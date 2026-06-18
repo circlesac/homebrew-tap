@@ -1,28 +1,28 @@
 class Vlt < Formula
   desc "1Password-compatible secrets CLI for Circles Vault"
   homepage "https://github.com/circlesac/vlt-cli"
-  version "26.6.3"
+  version "26.6.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/vlt-cli/releases/download/v#{version}/vlt-darwin-arm64.tar.gz"
-      sha256 "6e836ce68bd444f8ce4fabf0acc2d9e56f9c5b2981b43031cece781d26ae19ab"
+      sha256 "60b652e2f1d1522be3bffe3192c40a32b648d6bc98ad3e158c060983f63a341c"
     end
     on_intel do
       url "https://github.com/circlesac/vlt-cli/releases/download/v#{version}/vlt-darwin-amd64.tar.gz"
-      sha256 "3edef0c9e6f585075c2430d8f3047ac0e963647c111f2ee25eb89b49baf8b42e"
+      sha256 "eea519a15825096f0459e97928e77daf4dca5311067cf24ee028b3c14f33da8c"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/vlt-cli/releases/download/v#{version}/vlt-linux-arm64.tar.gz"
-      sha256 "6503c19f4158cb71c08a1e7dcc99fbc63182298add3d25b7eb72f0b9a1ecaa69"
+      sha256 "62186ec3ac04c2d01cf4fa108019462ad8727012a3bbb0191476a8d57dfef187"
     end
     on_intel do
       url "https://github.com/circlesac/vlt-cli/releases/download/v#{version}/vlt-linux-amd64.tar.gz"
-      sha256 "85434f0e789c768357a1bba9b1669b4a0fbb5c91c947f2e8f2c0e953dbb9e18b"
+      sha256 "c15a71ce3967721b7fe1e4b9dcc30637e1e0a989b8ca6788a9fd0965dbac8b7d"
     end
   end
 
