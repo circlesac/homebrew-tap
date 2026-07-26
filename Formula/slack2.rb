@@ -1,28 +1,28 @@
 class Slack2 < Formula
   desc "Slack app lifecycle CLI — create, install, and manage Slack apps from the terminal"
   homepage "https://github.com/circlesac/slack2-cli"
-  version "26.7.5"
+  version "26.7.6"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/slack2-cli/releases/download/v#{version}/slack2-darwin-arm64.tar.gz"
-      sha256 "4829b085a058778aaaf477699b06bb74e368458f470e5933c6a4f94e88cf55c7"
+      sha256 "4dd432fe47214c8f4194de7bc375904282e5a771e2b61a085b8994d50c9148e6"
     end
     on_intel do
       url "https://github.com/circlesac/slack2-cli/releases/download/v#{version}/slack2-darwin-x64.tar.gz"
-      sha256 "8d7c9e317d3f7c162ceccab13beac3efd62d9b77402d4da3b4a843e68e4223d5"
+      sha256 "74c6f8481ba7d7ee9d26d888f2268a31ae8f0f9625fc34a0031786a89c8af9bc"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/slack2-cli/releases/download/v#{version}/slack2-linux-arm64.tar.gz"
-      sha256 "67f3b40ec53e901f0f3edd11f390f23dc989f4cea5bccba3ad81c499f2a40cb6"
+      sha256 "9836eb68a607b4c4bf711b2aaa18ea44cc28f46dfd0308121b37e634a37dbfd8"
     end
     on_intel do
       url "https://github.com/circlesac/slack2-cli/releases/download/v#{version}/slack2-linux-x64.tar.gz"
-      sha256 "4671472df91d057e90b54e9335063447ad468c61fd6000b9a1eac0ae801ffbcd"
+      sha256 "d8d608a40f83acb5a46072089d4e2e79b13cd3350a3db8d728a50429843c5e5d"
     end
   end
 
