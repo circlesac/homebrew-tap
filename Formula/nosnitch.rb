@@ -7,11 +7,11 @@ class Nosnitch < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-arm64.tar.gz"
-      sha256 "7e2d810b6c714d27afff4cc6323858715ed32a6cf00ab747beb7f71f7ecf44d0"
+      sha256 "a8454059d1441bf3bab617205ae316e16ea117de5767be1b039e52613e151711"
     end
     on_intel do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-amd64.tar.gz"
-      sha256 "8afcdb07e5361ad6e506ad5aabdcc7d28ea25dedbaf7c4ff4f2eabe8db6c9374"
+      sha256 "ae2e84b97b7e0878b45cfa53e7da3ef73462aaf2cea13a831676b9dc7fc4867a"
     end
   end
 
