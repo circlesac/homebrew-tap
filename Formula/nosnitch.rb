@@ -1,17 +1,17 @@
 class Nosnitch < Formula
   desc "Stop your coding agent from snitching your code to model training"
   homepage "https://github.com/circlesac/nosnitch-cli"
-  version "26.7.0"
+  version "26.7.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-arm64.tar.gz"
-      sha256 "f0395ca4d27edaceaa27b4241865ef8f7b848d637e70d50c9a8132e9ba160866"
+      sha256 "100d52e88db9bc232d6cbe34fbc950d9f7cf610e2ee2f6f78074aec08453a9de"
     end
     on_intel do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-amd64.tar.gz"
-      sha256 "56025c86e6905b5a4cee243179bca85e74f51e1dfc32cdcd433bf17163ab02f2"
+      sha256 "5c5304fdded35cb1c66d645de714741350f8be73bc81413fd312173f6735cd49"
     end
   end
 
