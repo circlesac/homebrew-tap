@@ -7,22 +7,22 @@ class Cvlt < Formula
   on_macos do
     on_arm do
       url "https://github.com/circlesac/cvlt/releases/download/v#{version}/cvlt-darwin-arm64.tar.gz"
-      sha256 "4c4e35c9b04edbf66525f3b9977e1fefa572bba6b4f2a7dd7c52ff07afaa77f8"
+      sha256 "65124c8312b8688e42bf41977c0fb00b9a48cb58b7b1f62ec03bf2ff3248cc26"
     end
     on_intel do
       url "https://github.com/circlesac/cvlt/releases/download/v#{version}/cvlt-darwin-amd64.tar.gz"
-      sha256 "e5cd26e84c8efde523b8f80943748d194528c66ccac95dda749fc191321bca13"
+      sha256 "d49a1a51fa10e49a2ef35e1cd29dd1e7c5b0aabb86a02d77ac70377b7961c487"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/cvlt/releases/download/v#{version}/cvlt-linux-arm64.tar.gz"
-      sha256 "ee114292df669d940e3cd408fb009714d2ce7893637c5f5ead814e50bbb8bdf0"
+      sha256 "4d87866b3e49df4e1e962fab491fcd4a8bf5ab7ec86c44136f21098d428a50d7"
     end
     on_intel do
       url "https://github.com/circlesac/cvlt/releases/download/v#{version}/cvlt-linux-amd64.tar.gz"
-      sha256 "de11566b51249ab185202fa19f9070805eaa3b932f23bddd7b93480b05703335"
+      sha256 "02904075ec47003411e9c3c0eacd21d2936bc6d8989cd581175e4922ba4fe7d4"
     end
   end
 
