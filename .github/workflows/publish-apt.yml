@@ -1,0 +1,87 @@
+name: Publish APT index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-apt.yml
+      - apt/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: circlesac-homebrew-tap-apt
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install repository tooling
+        run: sudo apt-get update && sudo apt-get install -y gnupg xz-utils
+
+      - name: Validate release assets
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          mapfile -t manifests < <(
+            if [ "${{ github.event_name }}" = workflow_dispatch ] || \
+               [ -z "$BEFORE" ] || \
+               [ "$BEFORE" = 0000000000000000000000000000000000000000 ]; then
+              find apt/manifests -type f -name '*.deb822' | sort
+            else
+              git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- apt/manifests \
+                | grep '\.deb822$' || true
+            fi
+          )
+          ./apt/scripts/validate-manifests.sh
+          if [ "${#manifests[@]}" -gt 0 ]; then
+            ./apt/scripts/validate-manifests.sh --download "${manifests[@]}"
+          fi
+
+      - name: Import and verify signing key
+        env:
+          APT_SIGNING_PRIVATE_KEY: ${{ secrets.APT_SIGNING_PRIVATE_KEY }}
+        run: |
+          printf '%s' "$APT_SIGNING_PRIVATE_KEY" | gpg --batch --import
+          fingerprint="$(tr -d '[:space:]' < apt/keyrings/circlesac-archive-keyring.fingerprint)"
+          public_fingerprint="$(
+            gpg --batch --show-keys --with-colons apt/keyrings/circlesac-archive-keyring.asc \
+              | awk -F: '$1 == "fpr" {print $10; exit}'
+          )"
+          test "$fingerprint" = "$public_fingerprint"
+          gpg --batch --list-secret-keys "$fingerprint" >/dev/null
+          printf 'fingerprint=%s\n' "$fingerprint" >> "$GITHUB_OUTPUT"
+        id: signing
+
+      - name: Build signed flat repository
+        run: ./apt/scripts/build-repository.sh "$RUNNER_TEMP/apt-public" "${{ steps.signing.outputs.fingerprint }}"
+
+      - name: Publish immutable metadata release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="apt-${GITHUB_SHA::12}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            target="$(gh release view "$tag" --json targetCommitish --jq .targetCommitish)"
+            test "$target" = "$GITHUB_SHA"
+            if [ "$(gh release view "$tag" --json isDraft --jq .isDraft)" = false ]; then
+              printf 'APT index is already published for %s\n' "$GITHUB_SHA"
+              exit 0
+            fi
+          else
+            gh release create "$tag" \
+              --draft \
+              --target "$GITHUB_SHA" \
+              --title "APT index ${GITHUB_SHA::12}" \
+              --notes "Signed Circles APT index generated from commit $GITHUB_SHA."
+          fi
+          gh release upload "$tag" "$RUNNER_TEMP/apt-public/"* --clobber
+          gh release edit "$tag" --draft=false --latest
