@@ -1,0 +1,12 @@
+Package: nosnitch
+Version: 26.7.5
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Depends: libsecret-tools
+Homepage: https://github.com/circlesac/nosnitch-cli
+Description: Inspect and fix AI account privacy settings
+Filename: ../../../../nosnitch-cli/releases/download/v26.7.5/nosnitch_26.7.5_amd64.deb
+Size: 5528574
+SHA256: 15a16ffc07f29163e3ee954e0df3d0eddadec7853005637ecdd935e7a1af22fc

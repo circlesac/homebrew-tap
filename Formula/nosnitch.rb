@@ -1,17 +1,17 @@
 class Nosnitch < Formula
   desc "Stop your coding agent from snitching your code to model training"
   homepage "https://github.com/circlesac/nosnitch-cli"
-  version "26.7.4"
+  version "26.7.5"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-arm64.tar.gz"
-      sha256 "7ba6fa1695669277eb0717406d11b4cf8e5287cc4138baa9124d397723fda21b"
+      sha256 "3b1f103895006657130961ebab80538dbce5f10b7d6c7cffdbe47c77d7ab68b6"
     end
     on_intel do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-darwin-amd64.tar.gz"
-      sha256 "c330b968643376a688ce3a338370833d95f062ae331e2ad499e9aea6ace33d36"
+      sha256 "c3c97b22b1c45bd8cd5f3ccdc2514a7dfea40371d19c16850116e3456188db6f"
     end
   end
 
@@ -19,11 +19,11 @@ class Nosnitch < Formula
     depends_on "libsecret"
     on_arm do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-linux-arm64.tar.gz"
-      sha256 "f72a080bb6d69aa88aed6571bbb05dedf403b6011261a62f1abc13e6e48aba7f"
+      sha256 "f424370604a38404ac0c3e8b4d5af16b68f7278e88771ebaab2e48a8a72e438f"
     end
     on_intel do
       url "https://github.com/circlesac/nosnitch-cli/releases/download/v#{version}/nosnitch-linux-amd64.tar.gz"
-      sha256 "4d355a601fd42b808d6d11acd305c3202fa2d2d882556ad7ceaa3f2d5d60daa4"
+      sha256 "8131dacf6ff7db87f4211368f004cdf6c0666b6c1a347868892f087bdfa07996"
     end
   end
 
