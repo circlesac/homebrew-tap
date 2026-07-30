@@ -1,28 +1,28 @@
 class Prism < Formula
   desc "Register provider credentials for Prism in Circles Vault"
   homepage "https://github.com/circlesac/prism-cli"
-  version "26.7.1"
+  version "26.7.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-darwin-arm64.tar.gz"
-      sha256 "5a05638f889c325c7e5820dfdcb3cd675ba44259e970a44987169cd380c36947"
+      sha256 "e71324a070ee602896e1dac3a41b339a8f0195c39e954b33b6d3dca62ec5d646"
     end
     on_intel do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-darwin-amd64.tar.gz"
-      sha256 "9d4af4b9399587bbe224f2b29dc41b37fd9f02fea5b427aff46ab3b9c9b055ba"
+      sha256 "d83ad157d241765e8f8007297d16cedbc3fbccd3f421b39e2c38a467fc81cded"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-linux-arm64.tar.gz"
-      sha256 "692b485997b3643c4f4f73d95b9e61c13267943f0faae4e4a2f1cb18587931b6"
+      sha256 "fb4cd58fd06978b628869cb77500aa8c3e409d5834aa1e6fb2d595585338fc0d"
     end
     on_intel do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-linux-amd64.tar.gz"
-      sha256 "409dcd060d44e447c4e62c8d826317cd9a5ed7534f2b460fa0236ad13fad6f5b"
+      sha256 "59d88d50c5e32c172ada9029cfe8f16f606a5a2fae2ed19c9695f3436ba5f90f"
     end
   end
 
