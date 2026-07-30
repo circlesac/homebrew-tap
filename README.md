@@ -11,8 +11,12 @@ repository stores Homebrew formulae and immutable APT package manifests only.
 
 ## Homebrew
 
+Add the Circles tap, then install the desired CLI using the formula name
+documented in that CLI's repository:
+
 ```sh
-brew install circlesac/tap/nosnitch
+brew tap circlesac/tap
+brew install <formula>
 ```
 
 ## Debian and Ubuntu
@@ -35,8 +39,8 @@ rm -f "$tmp_key"
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/circlesac-archive-keyring.asc] https://github.com/circlesac/homebrew-tap/releases/latest/download ./" \
   | sudo tee /etc/apt/sources.list.d/circlesac.list >/dev/null
 sudo apt-get update
-sudo apt-get install nosnitch
 ```
 
-APT package names match their installed commands. For example, the repository
-is `nosnitch-cli`, while both the package and command are `nosnitch`.
+Then install the desired CLI with `sudo apt-get install <package>`, using the
+package name documented in that CLI's repository. Package names match their
+installed commands, although source repository names may end in `-cli`.
