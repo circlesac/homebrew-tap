@@ -1,0 +1,11 @@
+Package: notas
+Version: 26.6.0
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/notas-cli
+Description: Multi-provider notes and documents command-line client
+Filename: ../../../../notas-cli/releases/download/v26.6.0/notas_26.6.0_arm64.deb
+Size: 26706554
+SHA256: 8d2bd20d1c3c2edaf811dee74ee79fe886c6fce1e873fe21f3ba5ce5c6a4c89c

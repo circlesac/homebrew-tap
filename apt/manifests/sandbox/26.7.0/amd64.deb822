@@ -1,0 +1,11 @@
+Package: sandbox
+Version: 26.7.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/sandbox
+Description: E2B-compatible sandbox control plane
+Filename: ../../../../sandbox/releases/download/v26.7.0/sandbox_26.7.0_amd64.deb
+Size: 27692886
+SHA256: 63885a48221d9df614dcfbf46eb182493ab82bdb31a8ff5f703a7271802e4aab

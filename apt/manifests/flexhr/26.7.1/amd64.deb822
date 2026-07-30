@@ -1,0 +1,11 @@
+Package: flexhr
+Version: 26.7.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/flex-cli
+Description: Flex HR command-line client
+Filename: ../../../../flex-cli/releases/download/v26.7.1/flexhr_26.7.1_amd64.deb
+Size: 27311914
+SHA256: 505e2332055e7ea4f29b8cc32de3aac6c6a021e44ef82378950c8284a7234361

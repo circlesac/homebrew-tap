@@ -1,0 +1,11 @@
+Package: slack2
+Version: 26.7.9
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/slack2-cli
+Description: Slack app lifecycle and workspace administration
+Filename: ../../../../slack2-cli/releases/download/v26.7.9/slack2_26.7.9_amd64.deb
+Size: 27317776
+SHA256: cf8dec446d8b78c9a3fe0df18c29570748e5436d66559a19a419d303902d57b9

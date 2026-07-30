@@ -1,0 +1,11 @@
+Package: holla
+Version: 26.7.3
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/holla-cli
+Description: Multi-provider messaging command-line client
+Filename: ../../../../holla-cli/releases/download/v26.7.3/holla_26.7.3_arm64.deb
+Size: 26898214
+SHA256: 3c91dee9f37fc85d8bcb07a5be08f5fd375828598609d3384575f24534c95f6f

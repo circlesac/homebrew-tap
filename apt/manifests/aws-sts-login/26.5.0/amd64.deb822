@@ -1,0 +1,11 @@
+Package: aws-sts-login
+Version: 26.5.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/aws-sts-login
+Description: AWS Console auto-login CLI
+Filename: ../../../../aws-sts-login/releases/download/v26.5.0/aws-sts-login_26.5.0_amd64.deb
+Size: 28890782
+SHA256: 724f011d584cb7e4437e7290100de1d159c558ccaf9dcac069bd6155dc131f50

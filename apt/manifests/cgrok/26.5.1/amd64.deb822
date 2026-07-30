@@ -1,0 +1,11 @@
+Package: cgrok
+Version: 26.5.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/cgrok
+Description: Cloudflare-based secure tunneling CLI
+Filename: ../../../../cgrok/releases/download/v26.5.1/cgrok_26.5.1_amd64.deb
+Size: 27545008
+SHA256: 75d428113d730d3d47a699154a1a025041a05e296736ef8ca2551fd7d08c8e08

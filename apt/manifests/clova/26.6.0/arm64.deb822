@@ -1,0 +1,11 @@
+Package: clova
+Version: 26.6.0
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/clova-cli
+Description: CLOVA Note transcripts and summaries from the terminal
+Filename: ../../../../clova-cli/releases/download/v26.6.0/clova_26.6.0_arm64.deb
+Size: 26695650
+SHA256: 650394336ef41e81dbc46a06e990d762ba9c9e697fe7708ac48fa2906878bc44

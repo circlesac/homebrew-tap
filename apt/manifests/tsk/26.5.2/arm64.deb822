@@ -1,0 +1,11 @@
+Package: tsk
+Version: 26.5.2
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/tsk-cli
+Description: Unified task management command-line client
+Filename: ../../../../tsk-cli/releases/download/v26.5.2/tsk_26.5.2_arm64.deb
+Size: 26740074
+SHA256: a4aebc7d4be158d7a5b9f90b0faaf11c41b75ecc9508de1998dfdbf6bc6ec979
