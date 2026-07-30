@@ -11,8 +11,13 @@ repository stores Homebrew formulae and immutable APT package manifests only.
 
 ## Homebrew
 
-Install the desired CLI with `brew install circlesac/tap/<formula>`, using the
-formula name documented in that CLI's repository.
+Add the Circles tap, then install the desired CLI using the formula name
+documented in that CLI's repository:
+
+```sh
+brew tap circlesac/tap
+brew install <formula>
+```
 
 ## Debian and Ubuntu
 
