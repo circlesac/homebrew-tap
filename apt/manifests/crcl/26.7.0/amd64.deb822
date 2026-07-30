@@ -1,0 +1,11 @@
+Package: crcl
+Version: 26.7.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/crcl-cli
+Description: Manage Circles organizations, API keys, and authentication
+Filename: ../../../../crcl-cli/releases/download/v26.7.0/crcl_26.7.0_amd64.deb
+Size: 27304224
+SHA256: 72e4f4bec27faf73bb5af6701c2b9af83e0d2964adf932881bf211efd49ad1a0
