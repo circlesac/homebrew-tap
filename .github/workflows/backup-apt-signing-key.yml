@@ -1,0 +1,38 @@
+name: Back up APT signing key
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Back up signing key to private ops repository
+        env:
+          APT_SIGNING_PRIVATE_KEY: ${{ secrets.APT_SIGNING_PRIVATE_KEY }}
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          test -n "$APT_SIGNING_PRIVATE_KEY"
+          test -n "$GH_TOKEN"
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/circlesac/ops.git"
+          cd ops
+          install -d -m 0700 apt
+          umask 077
+          printf '%s\n' "$APT_SIGNING_PRIVATE_KEY" > apt/circlesac-archive-signing-key.asc
+          fingerprint="$(
+            gpg --batch --show-keys --with-colons apt/circlesac-archive-signing-key.asc 2>/dev/null \
+              | awk -F: '$1 == "fpr" {print $10; exit}'
+          )"
+          test "$fingerprint" = "EDEB035445B676C3D9C4CFA2263CBDF3A243818E"
+          grep -Fq -- '-----BEGIN PGP PRIVATE KEY BLOCK-----' \
+            apt/circlesac-archive-signing-key.asc
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apt/circlesac-archive-signing-key.asc
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: back up APT signing key"
+          git pull --rebase origin main
+          git push origin main
