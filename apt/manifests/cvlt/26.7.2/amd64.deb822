@@ -1,0 +1,11 @@
+Package: cvlt
+Version: 26.7.2
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/cvlt-cli
+Description: 1Password-compatible secrets CLI for Circles Vault
+Filename: ../../../../cvlt-cli/releases/download/v26.7.2/cvlt_26.7.2_amd64.deb
+Size: 27308850
+SHA256: bffd7696dff1ede88ca1b1fa27ff1d3d939f47e8eec3bfa0d154d881e6d778cf
