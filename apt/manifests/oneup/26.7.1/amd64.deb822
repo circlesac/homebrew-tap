@@ -1,0 +1,11 @@
+Package: oneup
+Version: 26.7.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/oneup
+Description: CalVer-based version management
+Filename: ../../../../oneup/releases/download/v26.7.1/oneup_26.7.1_amd64.deb
+Size: 2424188
+SHA256: ee72458a35fb0660b424c2576cf2ef59bb1f1a21e482f9120a951722acdeb0f3
