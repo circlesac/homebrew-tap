@@ -1,28 +1,28 @@
 class Gh2 < Formula
   desc "GitHub App lifecycle CLI — create, register, and manage GitHub Apps from the terminal"
   homepage "https://github.com/circlesac/gh2-cli"
-  version "26.7.1"
+  version "26.7.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/gh2-cli/releases/download/v#{version}/gh2-darwin-arm64.tar.gz"
-      sha256 "e0b2069076292e0abb8bff8194b70c41d140deb4ad29a0001890377f6bbbdb53"
+      sha256 "c7c3bf2f5e7717cd9225d188cfb86d88312ffc4d614c79d1646f536862eaf375"
     end
     on_intel do
       url "https://github.com/circlesac/gh2-cli/releases/download/v#{version}/gh2-darwin-x64.tar.gz"
-      sha256 "8faaa8b77ae64e4d2f3e6626c80b1c96709e46828ae8b05a10b05b4cd81cddf8"
+      sha256 "9dd2be7f3e49a9391562b5cad05286ddb5c3e6d64fa8fbfa1b2fcad32ab56086"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/gh2-cli/releases/download/v#{version}/gh2-linux-arm64.tar.gz"
-      sha256 "e48f5e9eaefdeb6a37867c0c91c5bd16c7a4aa16f5e25b1895a2d3ce40522639"
+      sha256 "bc2905da2d3ad8f65bdfff48474d360072f0c6913969aa60c0b21af7e278114d"
     end
     on_intel do
       url "https://github.com/circlesac/gh2-cli/releases/download/v#{version}/gh2-linux-x64.tar.gz"
-      sha256 "8da10baf5d4939abed0dad163aec2b34592d662eff9e4bd81a0fca11be53fc49"
+      sha256 "ff2c845897622dc3d8fe92a5f442dbc22cde185e619ac2371facd3e576321d6b"
     end
   end
 
