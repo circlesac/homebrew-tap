@@ -1,0 +1,11 @@
+Package: gh2
+Version: 26.8.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/gh2-cli
+Description: GitHub App lifecycle and Support operations
+Filename: ../../../../gh2-cli/releases/download/v26.8.1/gh2_26.8.1_amd64.deb
+Size: 27322604
+SHA256: eb3d864d587d768054756225d1c6c89a13b4f246233ae2127df117e65fb1892f
