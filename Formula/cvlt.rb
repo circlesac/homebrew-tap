@@ -1,28 +1,28 @@
 class Cvlt < Formula
   desc "1Password-compatible secrets CLI for Circles Vault"
   homepage "https://github.com/circlesac/vault"
-  version "26.8.11"
+  version "26.8.12"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/vault/releases/download/v#{version}/cvlt-darwin-arm64.tar.gz"
-      sha256 "2fb1efb879c20fcd2efd3f50afb34b8b5124dcfb766ff5a6a905ebb99ae964b4"
+      sha256 "d687f7e0dc789608bd33124170cd72020fc89a984046da7e23a66a7e61acbdb5"
     end
     on_intel do
       url "https://github.com/circlesac/vault/releases/download/v#{version}/cvlt-darwin-amd64.tar.gz"
-      sha256 "d38772e91781d62f168503f3ff75329c5f243deaea0a6d80807692218414fc10"
+      sha256 "27e4adba990b215ea2f759105943f70866f51b12b42be84709f899a1675e83af"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/vault/releases/download/v#{version}/cvlt-linux-arm64.tar.gz"
-      sha256 "5fbbdc3bc7d469bdee7cb73312ad3541a2dbb0ae36ebc1348a38806ae9cd9ce3"
+      sha256 "6c00cdfd9ae6595a82e838c7e704ddbf504b2791e52e813253a3454c32446cd0"
     end
     on_intel do
       url "https://github.com/circlesac/vault/releases/download/v#{version}/cvlt-linux-amd64.tar.gz"
-      sha256 "69fe68ec121b35ccc7eae09b20cb13d29ffca001c92ed09498957cf1c9d06f11"
+      sha256 "75bf10e8a8998bd5014b8a596b6afe358f2423f0010fa2d76287115ab524bc83"
     end
   end
 
