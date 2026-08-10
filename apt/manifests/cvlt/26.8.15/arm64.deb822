@@ -1,0 +1,11 @@
+Package: cvlt
+Version: 26.8.15
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: Circles <packages@circles.ac>
+Homepage: https://github.com/circlesac/vault
+Description: 1Password-compatible secrets CLI for Circles Vault
+Filename: ../../../../vault/releases/download/v26.8.15/cvlt_26.8.15_arm64.deb
+Size: 26712084
+SHA256: a34455c82459783437694c456d3946dbcf23ab35edc992fad3d40bc1a51e15d9
