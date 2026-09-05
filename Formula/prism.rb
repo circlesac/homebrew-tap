@@ -1,28 +1,28 @@
 class Prism < Formula
   desc "Manage provider accounts for Prism"
   homepage "https://github.com/circlesac/prism-cli"
-  version "26.9.5"
+  version "26.9.6"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-darwin-arm64.tar.gz"
-      sha256 "864adb38e6654eb996faec58e4061fbeb96fe415f574646b63ade5d82442999d"
+      sha256 "859f08a983c4339082af762b99c154f826cd33edf7a6f4cf0d044ac4e0d7b9e2"
     end
     on_intel do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-darwin-amd64.tar.gz"
-      sha256 "d62684e1e1edd2ed1951556f11449f446c75f120dc9a17c1c599efbcc94146b7"
+      sha256 "de6bde3ccde2687adb39a987e4b873e16cfc137a403a833c975e50b338df1048"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-linux-arm64.tar.gz"
-      sha256 "da576dd7e34598465a2790334d1d463681f1535f8ae2dc69a99507c262305db5"
+      sha256 "46c44006b70010bd69967556dea7c353529d6f660a05af059d5597fcaa4fa5ac"
     end
     on_intel do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-linux-amd64.tar.gz"
-      sha256 "ede5c740990c9dd7bd53d4eb6a8881c3bfdd33bc48938999a0325899561080b2"
+      sha256 "57b55bf5515250cec740392ebd423e810a7621e7378ec5ca510c922508669781"
     end
   end
 
