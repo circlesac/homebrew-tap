@@ -4,6 +4,8 @@ class Prism < Formula
   version "26.9.7"
   license "MIT"
 
+  deprecate! date: "2026-10-07", because: "is replaced by the prism-app cask", replacement_cask: "prism-app"
+
   on_macos do
     on_arm do
       url "https://github.com/circlesac/prism-cli/releases/download/v#{version}/prism-darwin-arm64.tar.gz"

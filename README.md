@@ -2,7 +2,7 @@
 
 This repository serves both Circles package-manager indexes:
 
-- `Formula/` is the Homebrew tap used by `circlesac/tap`.
+- `Formula/` and `Casks/` are the Homebrew tap used by `circlesac/tap`.
 - `apt/` builds the signed flat APT index published from this repository's
   latest GitHub Release.
 
@@ -18,6 +18,10 @@ documented in that CLI's repository:
 brew tap circlesac/tap
 brew install <formula>
 ```
+
+Apps are casks, installed with `brew install --cask circlesac/tap/<cask>`. Casks
+that update themselves (`auto_updates true`) are refreshed here on each release
+for new installs only.
 
 ## Debian and Ubuntu
 
