@@ -1,4 +1,4 @@
-cask "prism-app" do
+cask "prism" do
   version "26.10.2"
   sha256 "0fead88fc627f05d34425c5458fa1a8fc3aa89f34dcae0e882f8546dad676fb7"
 
