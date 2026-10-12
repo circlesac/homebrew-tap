@@ -1,8 +1,8 @@
 cask "temple" do
-  version "26.10.12"
-  sha256 "746b1380da9215b2523160ef0d799f9b32043541393cbbd9dd2b062a119d9e85"
+  version "26.10.13"
+  sha256 "f8a58338861bc5f2232585b2843b39428da125743b1ed9858f3fd9cd014a87b8"
 
-  url "https://releases.circles.ac/temple/#{version}/Temple-#{version}.dmg"
+  url "https://releases.circles.ac/temple/#{version}/temple-#{version}.dmg"
   name "Temple"
   desc "Temple for Mac, a menu bar bridge for Temple app"
   homepage "https://temple.circles.ac/"
