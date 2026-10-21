@@ -1,6 +1,6 @@
 cask "authd" do
-  version "26.10.7"
-  sha256 "7186808753cbe71cbdc6af5f09a02abdf14f6adbf599bf912a22d8118841e856"
+  version "26.10.8"
+  sha256 "28f67494749b18f1188b93ff80342410fb1f293efe3da71a685f276c3e278c24"
 
   url "https://releases.circles.ac/authd/#{version}/authd-#{version}.dmg"
   name "authd"
@@ -24,6 +24,11 @@ cask "authd" do
                    sudo: false
   end
 
+  # `delete:` always runs rm through sudo; the agent plist is the user's own file.
   uninstall launchctl: "com.circlesac.authd.app",
-            delete: "~/Library/LaunchAgents/com.circlesac.authd.app.plist"
+            script:    {
+              executable: "/bin/rm",
+              args:       ["-f", File.expand_path("~/Library/LaunchAgents/com.circlesac.authd.app.plist")],
+              sudo:       false,
+            }
 end
