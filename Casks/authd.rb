@@ -1,6 +1,6 @@
 cask "authd" do
-  version "26.10.11"
-  sha256 "7552fe6ded1dee35b9194232cf115226ed043f8aa9a3c6626b972cd8567ff693"
+  version "26.10.12"
+  sha256 "29f38e874b1a384ec7ab2d9fd5e264a3c1b1dfb7a024a21aafc1c83f481d461c"
 
   url "https://releases.circles.ac/authd/#{version}/authd-#{version}.dmg"
   name "authd"
