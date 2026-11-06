@@ -1,6 +1,6 @@
 cask "temple" do
-  version "26.11.1"
-  sha256 "381e8af827c9e5def0725915cf6be4d4ca9a620c776eb0c59c234086f619a9a3"
+  version "26.11.2"
+  sha256 "4e04bc8ad8d45939225456abac01127a08d8de69c1e487edbea6dd6f71f91ab6"
 
   url "https://releases.circles.ac/temple/#{version}/temple-server-#{version}.dmg"
   name "Temple Server"
