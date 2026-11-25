@@ -1,6 +1,6 @@
 cask "prism" do
-  version "26.11.4"
-  sha256 "b44b3719ceed9f478a69317d9d59f3cf3fd694c32e26ab091e256b6c77df0962"
+  version "26.11.5"
+  sha256 "c7132cf97d18638c5f1e78c539966d8c5f443d673f299645dc13e7a5bfce58a9"
 
   url "https://releases.circles.ac/prism/#{version}/Prism-#{version}.dmg"
   name "Prism"
